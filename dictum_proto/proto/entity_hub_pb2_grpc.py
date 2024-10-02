@@ -3,17 +3,17 @@
 import grpc
 import warnings
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from proto import account_audit_pb2 as proto_dot_account__audit__pb2
-from proto import account_balance_pb2 as proto_dot_account__balance__pb2
-from proto import account_detail_pb2 as proto_dot_account__detail__pb2
-from proto import account_pb2 as proto_dot_account__pb2
-from proto import contract_pb2 as proto_dot_contract__pb2
-from proto import employee_pb2 as proto_dot_employee__pb2
-from proto import entity_aggregate_pb2 as proto_dot_entity__aggregate__pb2
-from proto import entity_hub_pb2 as proto_dot_entity__hub__pb2
-from proto import entity_pb2 as proto_dot_entity__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from dictum_proto.proto import account_audit_pb2 as proto_dot_account__audit__pb2
+from dictum_proto.proto import account_balance_pb2 as proto_dot_account__balance__pb2
+from dictum_proto.proto import account_detail_pb2 as proto_dot_account__detail__pb2
+from dictum_proto.proto import account_pb2 as proto_dot_account__pb2
+from dictum_proto.proto import contract_pb2 as proto_dot_contract__pb2
+from dictum_proto.proto import employee_pb2 as proto_dot_employee__pb2
+from dictum_proto.proto import entity_aggregate_pb2 as proto_dot_entity__aggregate__pb2
+from dictum_proto.proto import entity_hub_pb2 as proto_dot_entity__hub__pb2
+from dictum_proto.proto import entity_pb2 as proto_dot_entity__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

@@ -3,16 +3,16 @@
 # source: proto/accrual_attachment.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from proto import attachment_pb2 as proto_dot_attachment__pb2
+from dictum_proto.proto import attachment_pb2 as proto_dot_attachment__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1eproto/accrual_attachment.proto\x1a\x16proto/attachment.proto\"~\n\x11\x41\x63\x63rualAttachment\x12\x1d\n\x15\x61\x63\x63rual_attachment_id\x18\x01 \x01(\x05\x12\x15\n\rattachment_id\x18\x02 \x01(\x05\x12\x12\n\naccrual_id\x18\x03 \x01(\x05\x12\x1f\n\nattachment\x18\x04 \x01(\x0b\x32\x0b.AttachmentB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

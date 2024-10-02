@@ -3,20 +3,20 @@
 # source: proto/accounting.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
-from proto import tag_pb2 as proto_dot_tag__pb2
-from proto import accrual_status_transition_pb2 as proto_dot_accrual__status__transition__pb2
-from proto import account_audit_pb2 as proto_dot_account__audit__pb2
-from proto import account_balance_pb2 as proto_dot_account__balance__pb2
+from dictum_proto.google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
+from dictum_proto.proto import tag_pb2 as proto_dot_tag__pb2
+from dictum_proto.proto import accrual_status_transition_pb2 as proto_dot_accrual__status__transition__pb2
+from dictum_proto.proto import account_audit_pb2 as proto_dot_account__audit__pb2
+from dictum_proto.proto import account_balance_pb2 as proto_dot_account__balance__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16proto/accounting.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x0fproto/tag.proto\x1a%proto/accrual_status_transition.proto\x1a\x19proto/account_audit.proto\x1a\x1bproto/account_balance.proto\"+\n\x19ListAccrualHistoryRequest\x12\x0e\n\x06parent\x18\x01 \x01(\t\",\n\x1aListTransferHistoryRequest\x12\x0e\n\x06parent\x18\x01 \x01(\t\"1\n\x0fListTagsRequest\x12\x0e\n\x06\x66ilter\x18\x01 \x01(\t\x12\x0e\n\x06parent\x18\x02 \x01(\t\"c\n\x1aListAccountBalancesRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\x12\x0e\n\x06\x66ilter\x18\x03 \x01(\t\x12\x0e\n\x06parent\x18\x04 \x01(\t\"a\n\x18ListAccountAuditsRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\x12\x0e\n\x06\x66ilter\x18\x03 \x01(\t\x12\x0e\n\x06parent\x18\x04 \x01(\t\"5\n#ListAccrualStatusTransitionsRequest\x12\x0e\n\x06\x66ilter\x18\x01 \x01(\t\"/\n\x16GetAccountAuditRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\"1\n\x18GetAccountBalanceRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\"G\n\x1b\x43reateAccountBalanceRequest\x12(\n\x0f\x61\x63\x63ount_balance\x18\x01 \x01(\x0b\x32\x0f.AccountBalance\"A\n\x19\x43reateAccountAuditRequest\x12$\n\raccount_audit\x18\x01 \x01(\x0b\x32\r.AccountAudit\"%\n\x10\x43reateTagRequest\x12\x11\n\x03tag\x18\x01 \x01(\x0b\x32\x04.Tag\"x\n\x1bListAccountBalancesResponse\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12)\n\x10\x61\x63\x63ount_balances\x18\x02 \x03(\x0b\x32\x0f.AccountBalance\x12\x17\n\x0fnext_page_token\x18\x03 \x01(\t\"=\n\x10ListTagsResponse\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12\x12\n\x04tags\x18\x02 \x03(\x0b\x32\x04.Tag\"{\n$ListAccrualStatusTransitionsResponse\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12<\n\x1a\x61\x63\x63rual_status_transitions\x18\x02 \x03(\x0b\x32\x18.AccrualStatusTransition2\xdc\x06\n\nAccounting\x12z\n\x13ListAccountBalances\x12\x1b.ListAccountBalancesRequest\x1a\x1c.ListAccountBalancesResponse\"(\x82\xd3\xe4\x93\x02\"\x12 /v1/{parent=accounts/*}/balances\x12\x61\n\x0fGetAccountAudit\x12\x17.GetAccountAuditRequest\x1a\r.AccountAudit\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v1/{parent=accounts/*}/audits\x12o\n\x11GetAccountBalance\x12\x19.GetAccountBalanceRequest\x1a\x0f.AccountBalance\".\x82\xd3\xe4\x93\x02(\x12&/v1/{resource_name=accounts/*}/balance\x12\x97\x01\n\x14\x43reateAccountBalance\x12\x1c.CreateAccountBalanceRequest\x1a\x0f.AccountBalance\"P\x82\xd3\xe4\x93\x02J\"7/v1/{account_balance.resource_name=accounts/*}/balances:\x0f\x61\x63\x63ount_balance\x12\x93\x01\n\x1cListAccrualStatusTransitions\x12$.ListAccrualStatusTransitionsRequest\x1a%.ListAccrualStatusTransitionsResponse\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v1/accrual-status-transitions\x12\x61\n\x08ListTags\x12\x10.ListTagsRequest\x1a\x11.ListTagsResponse\"0\x82\xd3\xe4\x93\x02*\x12\x08/v1/tagsZ\x1e\x12\x1c/v1/{parent=entities/*}/tags\x12k\n\tCreateTag\x12\x11.CreateTagRequest\x1a\x04.Tag\"E\x82\xd3\xe4\x93\x02?\"\x08/v1/tags:\x03tagZ.\"\'/v1/{tag.resource_name=entities/*}/tags:\x03tagB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

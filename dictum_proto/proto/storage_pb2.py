@@ -3,19 +3,19 @@
 # source: proto/storage.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import attachment_pb2 as proto_dot_attachment__pb2
+from dictum_proto.google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
+from dictum_proto.google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import attachment_pb2 as proto_dot_attachment__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13proto/storage.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x14proto/requests.proto\x1a\x16proto/attachment.proto\"R\n\x17ListAttachmentsResponse\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12 \n\x0b\x61ttachments\x18\x02 \x03(\x0b\x32\x0b.Attachment\"l\n\x1d\x42\x61tchInsertAttachmentsRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12 \n\x0b\x61ttachments\x18\x02 \x03(\x0b\x32\x0b.Attachment\x12\x12\n\nservice_id\x18\x03 \x01(\x05\x32\xab\x05\n\x07Storage\x12\x91\x02\n\x10UploadAttachment\x12\x18.UploadAttachmentRequest\x1a\x0b.Attachment\"\xd5\x01\x82\xd3\xe4\x93\x02\xce\x01\"5/v1/{attachment.resource_name=accruals/*}/attachments:\nattachmentZD\"6/v1/{attachment.resource_name=transfers/*}/attachments:\nattachmentZC\"5/v1/{attachment.resource_name=entities/*}/attachments:\nattachment\x12\xd3\x01\n\x10\x44\x65leteAttachment\x12\x0e.DeleteRequest\x1a\x16.google.protobuf.Empty\"\x96\x01\x82\xd3\xe4\x93\x02\x8f\x01*,/v1/{resource_name=accruals/*/attachments/*}Z/*-/v1/{resource_name=transfers/*/attachments/*}Z.*,/v1/{resource_name=entities/*/attachments/*}\x12\xb5\x01\n\x0fListAttachments\x12\x0c.ListRequest\x1a\x18.ListAttachmentsResponse\"z\x82\xd3\xe4\x93\x02t*#/v1/{parent=accruals/*}/attachmentsZ&*$/v1/{parent=transfers/*}/attachmentsZ%*#/v1/{parent=entities/*}/attachmentsB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

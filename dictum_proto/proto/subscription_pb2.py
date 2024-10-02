@@ -3,16 +3,16 @@
 # source: proto/subscription.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from proto import operation_type_pb2 as proto_dot_operation__type__pb2
+from dictum_proto.proto import operation_type_pb2 as proto_dot_operation__type__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x18proto/subscription.proto\x1a\x1aproto/operation_type.proto\"\x98\x01\n\x0cSubscription\x12\x17\n\x0fsubscription_id\x18\x01 \x01(\x05\x12&\n\x0eoperation_type\x18\x03 \x01(\x0e\x32\x0e.OperationType\x12\r\n\x05table\x18\x04 \x01(\t\x12\x0e\n\x06\x66ields\x18\x05 \x01(\t\x12\x13\n\x0bwebhook_url\x18\x06 \x01(\t\x12\x13\n\x0b\x63redentials\x18\x07 \x01(\tB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

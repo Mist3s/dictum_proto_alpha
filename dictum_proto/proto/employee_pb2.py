@@ -12,11 +12,11 @@ from google.protobuf.internal import builder as _builder
 _sym_db = _symbol_database.Default()
 
 
-from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
-from proto import country_pb2 as proto_dot_country__pb2
-from proto import entity_pb2 as proto_dot_entity__pb2
-from proto import permission_pb2 as proto_dot_permission__pb2
-from proto import role_pb2 as proto_dot_role__pb2
+from dictum_proto.google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+from dictum_proto.proto import country_pb2 as proto_dot_country__pb2
+from dictum_proto.proto import entity_pb2 as proto_dot_entity__pb2
+from dictum_proto.proto import permission_pb2 as proto_dot_permission__pb2
+from dictum_proto.proto import role_pb2 as proto_dot_role__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14proto/employee.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x13proto/country.proto\x1a\x12proto/entity.proto\x1a\x16proto/permission.proto\x1a\x10proto/role.proto\"\xc3\x02\n\x08\x45mployee\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x11\n\tentity_id\x18\x02 \x01(\x05\x12\x13\n\x04role\x18\x04 \x01(\x0e\x32\x05.Role\x12 \n\x18personal_document_number\x18\x07 \x01(\t\x12&\n\x1epersonal_document_country_code\x18\t \x01(\t\x12\x17\n\x06\x65ntity\x18\r \x01(\x0b\x32\x07.Entity\x12\x19\n\x07\x63ountry\x18\x0f \x01(\x0b\x32\x08.Country\x12-\n\thire_time\x18\x10 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12/\n\x0bunhire_time\x18\x11 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12 \n\x0bpermissions\x18\x12 \x03(\x0b\x32\x0b.PermissionB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

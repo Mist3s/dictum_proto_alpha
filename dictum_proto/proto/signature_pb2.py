@@ -3,18 +3,18 @@
 # source: proto/signature.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
-from proto import action_pb2 as proto_dot_action__pb2
-from proto import user_pb2 as proto_dot_user__pb2
+from dictum_proto.google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+from dictum_proto.proto import action_pb2 as proto_dot_action__pb2
+from dictum_proto.proto import user_pb2 as proto_dot_user__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15proto/signature.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x12proto/action.proto\x1a\x10proto/user.proto\"\xd2\x01\n\tSignature\x12\x14\n\x0csignature_id\x18\x01 \x01(\x05\x12\x11\n\taction_id\x18\x02 \x01(\x05\x12\x11\n\tsigner_id\x18\x03 \x01(\x05\x12\x11\n\tentity_id\x18\x04 \x01(\x05\x12/\n\x0b\x63reate_time\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x15\n\rresource_name\x18\x06 \x01(\t\x12\x17\n\x06\x61\x63tion\x18\x07 \x01(\x0b\x32\x07.Action\x12\x15\n\x06signer\x18\x08 \x01(\x0b\x32\x05.UserB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

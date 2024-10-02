@@ -3,16 +3,16 @@
 # source: proto/requests.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from proto import attachment_type_pb2 as proto_dot_attachment__type__pb2
+from dictum_proto.proto import attachment_type_pb2 as proto_dot_attachment__type__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14proto/requests.proto\x1a\x1bproto/attachment_type.proto\"p\n\x0bListRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\x12\x0e\n\x06parent\x18\x03 \x01(\t\x12\x0e\n\x06\x66ilter\x18\x04 \x01(\t\x12\x1a\n\x08sortings\x18\x05 \x03(\x0b\x32\x08.Sorting\"G\n\x07Sorting\x12\x12\n\nfield_name\x18\x01 \x01(\t\x12\x1f\n\x04mode\x18\x02 \x01(\x0e\x32\x0c.SortingModeH\x00\x88\x01\x01\x42\x07\n\x05_mode\"#\n\nGetRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\"2\n\x10\x41ggregateRequest\x12\x0e\n\x06\x66ilter\x18\x01 \x01(\t\x12\x0e\n\x06parent\x18\x02 \x01(\t\"&\n\rDeleteRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\"K\n\x14UploadInvoiceRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12\x0e\n\x06number\x18\x02 \x01(\t\x12\x0c\n\x04\x66ile\x18\x03 \x01(\x0c\"\xac\x01\n\x17UploadAttachmentRequest\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12\x0c\n\x04\x66ile\x18\x02 \x01(\x0c\x12\x11\n\tmime_type\x18\x03 \x01(\t\x12\x1d\n\x04type\x18\x04 \x01(\x0e\x32\x0f.AttachmentType\x12\x0c\n\x04name\x18\x05 \x01(\t\x12\x13\n\x0buploader_id\x18\x06 \x01(\x05\x12\x17\n\x0f\x65xternal_number\x18\x08 \x01(\t*\xd9\x01\n\x0bSortingMode\x12\x15\n\x11SORTING_MODE_NONE\x10\x00\x12\x14\n\x10SORTING_MODE_ASC\x10\x01\x12\x15\n\x11SORTING_MODE_DESC\x10\x02\x12 \n\x1cSORTING_MODE_ASC_NULLS_FIRST\x10\x03\x12!\n\x1dSORTING_MODE_DESC_NULLS_FIRST\x10\x04\x12\x1f\n\x1bSORTING_MODE_ASC_NULLS_LAST\x10\x05\x12 \n\x1cSORTING_MODE_DESC_NULLS_LAST\x10\x06\x42&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

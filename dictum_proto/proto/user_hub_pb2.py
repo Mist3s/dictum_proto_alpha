@@ -3,19 +3,19 @@
 # source: proto/user_hub.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import user_pb2 as proto_dot_user__pb2
-from proto import auth_provider_pb2 as proto_dot_auth__provider__pb2
+from dictum_proto.google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import user_pb2 as proto_dot_user__pb2
+from dictum_proto.proto import auth_provider_pb2 as proto_dot_auth__provider__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14proto/user_hub.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x14proto/requests.proto\x1a\x10proto/user.proto\x1a\x19proto/auth_provider.proto\"Y\n\x11ListUsersResponse\x12\x15\n\rresource_name\x18\x01 \x01(\t\x12\x14\n\x05users\x18\x02 \x03(\x0b\x32\x05.User\x12\x17\n\x0fnext_page_token\x18\x03 \x01(\t2\x86\x03\n\x07UserHub\x12@\n\tListUsers\x12\x0c.ListRequest\x1a\x12.ListUsersResponse\"\x11\x82\xd3\xe4\x93\x02\x0b\x12\t/v1/users\x12\x42\n\x07GetUser\x12\x0b.GetRequest\x1a\x05.User\"#\x82\xd3\xe4\x93\x02\x1d\x12\x1b/v1/{resource_name=users/*}\x12\x33\n\nCreateUser\x12\x05.User\x1a\x05.User\"\x17\x82\xd3\xe4\x93\x02\x11\"\t/v1/users:\x04user\x12J\n\nUpdateUser\x12\x05.User\x1a\x05.User\".\x82\xd3\xe4\x93\x02(2 /v1/{user.resource_name=users/*}:\x04user\x12t\n\x12\x43reateUserProvider\x12\r.AuthProvider\x1a\r.AuthProvider\"@\x82\xd3\xe4\x93\x02:\"./v1/{provider.resource_name=users/*}/providers:\x08providerB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')

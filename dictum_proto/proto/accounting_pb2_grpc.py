@@ -3,10 +3,10 @@
 import grpc
 import warnings
 
-from proto import account_audit_pb2 as proto_dot_account__audit__pb2
-from proto import account_balance_pb2 as proto_dot_account__balance__pb2
-from proto import accounting_pb2 as proto_dot_accounting__pb2
-from proto import tag_pb2 as proto_dot_tag__pb2
+from dictum_proto.proto import account_audit_pb2 as proto_dot_account__audit__pb2
+from dictum_proto.proto import account_balance_pb2 as proto_dot_account__balance__pb2
+from dictum_proto.proto import accounting_pb2 as proto_dot_accounting__pb2
+from dictum_proto.proto import tag_pb2 as proto_dot_tag__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

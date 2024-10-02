@@ -3,16 +3,16 @@
 # source: proto/auth_provider.proto
 # Protobuf Python Version: 5.26.1
 """Generated protocol buffer code."""
-from google.protobuf import descriptor as _descriptor
-from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
+from dictum_proto.google.protobuf import descriptor as _descriptor
+from dictum_proto.google.protobuf import descriptor_pool as _descriptor_pool
+from dictum_proto.google.protobuf import symbol_database as _symbol_database
+from dictum_proto.google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
-from proto import user_pb2 as proto_dot_user__pb2
+from dictum_proto.proto import user_pb2 as proto_dot_user__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x19proto/auth_provider.proto\x1a\x10proto/user.proto\"s\n\x0c\x41uthProvider\x12\x0f\n\x07user_id\x18\x01 \x01(\x05\x12\x15\n\rprovider_name\x18\x02 \x01(\t\x12\x0f\n\x07ref_key\x18\x03 \x01(\t\x12\x15\n\rresource_name\x18\x04 \x01(\t\x12\x13\n\x04user\x18\x06 \x01(\x0b\x32\x05.UserB&Z$github.com/AlexKenbo/dictum_proto/gob\x06proto3')
