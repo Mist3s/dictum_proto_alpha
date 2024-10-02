@@ -3,18 +3,18 @@
 import grpc
 import warnings
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from proto import accrual_pb2 as proto_dot_accrual__pb2
-from proto import accruals_aggregate_pb2 as proto_dot_accruals__aggregate__pb2
-from proto import allocation_pb2 as proto_dot_allocation__pb2
-from proto import article_pb2 as proto_dot_article__pb2
-from proto import comment_pb2 as proto_dot_comment__pb2
-from proto import event_aggregate_pb2 as proto_dot_event__aggregate__pb2
-from proto import fin_event_pb2 as proto_dot_fin__event__pb2
-from proto import permission_pb2 as proto_dot_permission__pb2
-from proto import position_pb2 as proto_dot_position__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import transfer_pb2 as proto_dot_transfer__pb2
+from dictum_proto.google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from dictum_proto.proto import accrual_pb2 as proto_dot_accrual__pb2
+from dictum_proto.proto import accruals_aggregate_pb2 as proto_dot_accruals__aggregate__pb2
+from dictum_proto.proto import allocation_pb2 as proto_dot_allocation__pb2
+from dictum_proto.proto import article_pb2 as proto_dot_article__pb2
+from dictum_proto.proto import comment_pb2 as proto_dot_comment__pb2
+from dictum_proto.proto import event_aggregate_pb2 as proto_dot_event__aggregate__pb2
+from dictum_proto.proto import fin_event_pb2 as proto_dot_fin__event__pb2
+from dictum_proto.proto import permission_pb2 as proto_dot_permission__pb2
+from dictum_proto.proto import position_pb2 as proto_dot_position__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import transfer_pb2 as proto_dot_transfer__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

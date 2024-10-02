@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-from proto import payment_pb2 as proto_dot_payment__pb2
+from dictum_proto.proto import payment_pb2 as proto_dot_payment__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

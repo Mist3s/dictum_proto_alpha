@@ -3,10 +3,10 @@
 import grpc
 import warnings
 
-from proto import auth_provider_pb2 as proto_dot_auth__provider__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import user_hub_pb2 as proto_dot_user__hub__pb2
-from proto import user_pb2 as proto_dot_user__pb2
+from dictum_proto.proto import auth_provider_pb2 as proto_dot_auth__provider__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import user_hub_pb2 as proto_dot_user__hub__pb2
+from dictum_proto.proto import user_pb2 as proto_dot_user__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

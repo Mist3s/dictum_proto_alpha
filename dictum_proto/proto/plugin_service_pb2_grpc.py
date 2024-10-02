@@ -3,12 +3,12 @@
 import grpc
 import warnings
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from proto import object_source_pb2 as proto_dot_object__source__pb2
-from proto import plugin_service_pb2 as proto_dot_plugin__service__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import service_pb2 as proto_dot_service__pb2
-from proto import service_run_pb2 as proto_dot_service__run__pb2
+from dictum_proto.google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from dictum_proto.proto import object_source_pb2 as proto_dot_object__source__pb2
+from dictum_proto.proto import plugin_service_pb2 as proto_dot_plugin__service__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import service_pb2 as proto_dot_service__pb2
+from dictum_proto.proto import service_run_pb2 as proto_dot_service__run__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__

@@ -3,10 +3,10 @@
 import grpc
 import warnings
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-from proto import attachment_pb2 as proto_dot_attachment__pb2
-from proto import requests_pb2 as proto_dot_requests__pb2
-from proto import storage_pb2 as proto_dot_storage__pb2
+from dictum_proto.google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from dictum_proto.proto import attachment_pb2 as proto_dot_attachment__pb2
+from dictum_proto.proto import requests_pb2 as proto_dot_requests__pb2
+from dictum_proto.proto import storage_pb2 as proto_dot_storage__pb2
 
 GRPC_GENERATED_VERSION = '1.64.1'
 GRPC_VERSION = grpc.__version__
