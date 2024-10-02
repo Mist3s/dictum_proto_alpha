@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+from dictum_proto.google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 from dictum_proto.proto import service_run_state_pb2 as proto_dot_service__run__state__pb2
 from dictum_proto.proto import service_pb2 as proto_dot_service__pb2
 
